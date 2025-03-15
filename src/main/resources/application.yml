@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+jwt:
+  secret: Zrjiq4--2ZW3-tUM8bH1Hmg24yCy1GiHx_OsyRlg6EU= # Substitua por uma chave mais segura
+  expiration: 86400000 # 24 horas em milissegundos
+
+spring:
+  data:
+    redis:
+      url: redis://localhost:6379 # Define a URL completa do Redis
+      timeout: 60000
+
+logging:
+  level:
+    root: INFO
+    org.springframework.security: DEBUG
